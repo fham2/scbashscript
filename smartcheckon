@@ -1,5 +1,6 @@
 #!/bin/bash
 helm install \
+  --set persistence.storageClassName=scstorage \
   --values overrides.yaml \
   deepsecurity-smartcheck \
   https://github.com/deep-security/smartcheck-helm/archive/master.tar.gz
