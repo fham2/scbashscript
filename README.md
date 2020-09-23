@@ -1,0 +1,2 @@
+# scbashscript
+Smartcheck bash script
