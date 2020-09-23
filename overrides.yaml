@@ -1,0 +1,39 @@
+  ## Default value: administrator
+  roleName: administrator
+
+  ## auditorRoleName is the name of the default auditor role that the system creates on startup.
+  ## If a role with this name already exists, no action will be taken.
+  ##
+  ## Default value: auditor
+  auditorRoleName: auditor
+
+  ## userRoleName is the name of the default user role that the system creates on startup.
+  ## If a role with this name already exists, no action will be taken.
+  ##
+  ## Default value: user
+  userRoleName: user
+
+  ## userName is the name of the default administrator user that the system creates on startup.
+  ## If a user with this name already exists, no action will be taken.
+  ##
+  ## Default value: administrator
+  userName: admin
+
+  ## password is the password assigned to the default administrator that the system creates on startup.
+  ## If a user with the name `auth.userName` already exists, no action will be taken.
+  ##
+  ## Default value: a generated password derived from the secretSeed and system details
+  password: trend123
+
+  ## audience is the value inserted into the JWT token for authentication.
+  ##
+  ## Default value: deepsecurity-smartcheck
+  audience: deepsecurity-smartcheck
+
+  ## Session tokens are issued for a specific duration.
+  ## This must be less than `auth.sessionKeyLifetime`.
+  ##
+  ## Default value: 1h
+  ## Minimum value: 15m
+  ## Maximum value: `auth.sessionKeyLifetime`
+  sessionDuration: 1h

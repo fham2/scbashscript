@@ -1,0 +1,5 @@
+#!/bin/bash
+helm install \
+  --values overrides.yaml \
+  deepsecurity-smartcheck \
+  https://github.com/deep-security/smartcheck-helm/archive/master.tar.gz
